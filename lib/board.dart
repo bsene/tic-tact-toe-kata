@@ -1,9 +1,24 @@
-class Board {
-  late final String _state;
-  Board(String state) {
-    _state = state;
-  }
+abstract class Board {
+  bool isFull();
+}
+
+class FullBoard implements Board {
+  @override
   bool isFull() {
-    return !_state.contains(" ");
+    return true;
+  }
+}
+
+class EmptyBoard implements Board {
+  @override
+  bool isFull() {
+    return false;
+  }
+}
+
+class NonFullBoard implements Board {
+  @override
+  bool isFull() {
+    return false;
   }
 }
