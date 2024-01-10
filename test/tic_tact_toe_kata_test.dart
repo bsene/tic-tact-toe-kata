@@ -1,4 +1,4 @@
-import 'package:tic_tact_toe_kata/tic_tact_toe_kata.dart';
+import 'package:tic_tact_toe_kata/game.dart';
 import 'package:test/test.dart';
 
 void main() {
